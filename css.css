@@ -1,0 +1,24 @@
+.mat{
+    margin-top: 5%;
+    background-color: #e6e6e6;
+}
+.titulo{
+    text-align: center;
+    font-size: 24px;
+}
+body{
+    font-size: 100%;
+}
+.tamany{
+    width: auto;    
+}
+#EZGLPI-4{
+    width: 100%;
+    height: 100px;
+}
+.armedioillo{
+    text-align: center;
+}
+.plu{
+    width: 20px;
+}
