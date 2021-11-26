@@ -1,3 +1,5 @@
+
+
 <!DOCTYPE html>
 <html lang="es">
    <head>
@@ -16,96 +18,120 @@
       <title>EZGLPI</title>
    </head>
    <body onload="bum0()">
-        <div class="container w-75 mat">
-            <div class="row">
-                <div class="col-sm-2"></div>
-                <div class="col-sm-8 titulo"><b>EZGLPI</b></div>
-                <div class="col-sm-2"></div>
-            </div>
-            <br>
-            <div class="row">
-                <div class="col-sm-1"></div>
-                <div class="col-sm-10"><h4>Título de la incidencia</h4></div>
-                <div class="col-sm-1"></div>
-            </div>
-            <div class="row">
-                <div class="col-sm-1"></div>
-                <div class="col-sm-10">
-                    <form name="add" action="GLPI-AUTO.php" method="post">
-                    <input type="text" id="EZGLPI-1" name="EZGLPI-1"><br><br>
-                    <h4>Fecha de apertura</h4>
-                    <input type="date" id="EZGLPI-A" name="EZGLPI-A" min="2021-01-01" max="2023-01-01"><br><br>
-                    <h4>Hora de apertura (formato 24 h)</h4>
-                    <input type="time" name="EZGLPI-B" id="EZGLPI-B" step="1"><br><br>
-                    <h4>Estado</h4>
-                    <select name="EZGLPI-3" id="EZGLPI-3">
-                        <option value="1">Nuevo</option>
-                        <option value="2">En curso</option>
-                        <option value="5">Resuelto</option>
-                        <option value="6">Cerrado</option>
-                    </select><br><br>
-                    <h4>Descripción de la incidencia</h4>
-                    <input type="text" id="EZGLPI-4" name="EZGLPI-4"><br><br>
-                    <h4>Urgencia</h4>
-                    <select name="EZGLPI-5" id="EZGLPI-5">
-                        <option value="3">Media</option>
-                        <option value="5">Muy Alta</option>
-                        <option value="4">Alta</option>
-                        <option value="2">Baja</option>
-                        <option value="1">Muy Baja</option>
-                    </select><br><br>
-                    <h4>Impacto</h4>
-                    <select name="EZGLPI-6" id="EZGLPI-6">
-                        <option value="3">Media</option>
-                        <option value="5">Muy Alta</option>
-                        <option value="4">Alta</option>
-                        <option value="2">Baja</option>
-                        <option value="1">Muy Baja</option>
-                    </select><br><br>
-                    <h4>Prioridad</h4>
-                    <select name="EZGLPI-7" id="EZGLPI-7">
-                        <option value="3">Media</option>
-                        <option value="5">Muy Alta</option>
-                        <option value="4">Alta</option>
-                        <option value="2">Baja</option>
-                        <option value="1">Muy Baja</option>
-                    </select><br><br>
-                    <h4>Categoría</h4>
-                    <select name="EZGLPI-8" id="EZGLPI-8">
-                        <option value="4">Client</option>
-                        <option value="3">SAT</option>
-                        <option value="2">SMIX</option>
-                    </select><br><br>
-                    <h4>Duración total</h4>
-                    <select name="EZGLPI-9" id="EZGLPI-9">
-                        <option value="900">0h 15m</option>
-                        <option value="1800">0h 30m</option>
-                        <option value="2700">0h 45m</option>
-                        <option value="3600">1h 00m</option>
-                        <option value="4500">1h 15m</option>
-                        <option value="5400">1h 30m</option>
-                        <option value="6300">1h 45m</option>
-                        <option value="7200">2h 00m</option>
-                        <option value="8100">2h 15m</option>
-                        <option value="9000">2h 30m</option>
-                        <option value="9900">2h 45m</option>
-                        <option value="10800">3h 00m</option>
-                        <option value="11700">3h 15m</option>
-                        <option value="12600">3h 30m</option>
-                        <option value="13500">3h 45m</option>
-                        <option value="14400">4h 00m</option>
-                        <option value="15300">4h 15m</option>
-                        <option value="16200">4h 30m</option>
-                        <option value="17100">4h 45m</option>
-                        <option value="18000">5h 00m</option>
-                        <option value="18900">5h 15m</option>
-                        <option value="19800">5h 30m</option>
-                        <option value="20700">5h 45m</option>
-                        <option value="21600">6h 00m</option>
-                    </select>
-                    <br><br><br>
-                    <h4>Tecnico asignado</h4>
-                    <select name="EZGLPI-C" id="EZGLPI-C">
+      <br><br>
+      <div class="armedioillo">
+         <h1><b>EZGLPI</b></h1>
+      <br><br>
+   </div>
+      <div class="container w-75 mat">
+         <br><br>
+         <div class="row">
+            <div class="col-sm-1"></div>
+            <div class="col-sm-10">
+               <form name="add" action="GLPI-AUTO.php" method="post">
+                  <h4>Título de la incidencia (no posar " ni ')</h4>
+                  <input type="text" id="EZGLPI-1" name="EZGLPI-1"><br><br>
+                  <h4>Descripción de la incidencia (no posar " ni ')</h4>
+                  <input type="text" id="EZGLPI-4" name="EZGLPI-4"><br><br>
+                  <h4>Fecha de apertura</h4>
+                  <input type="date" id="EZGLPI-A" name="EZGLPI-A" min="2021-01-01" max="2023-01-01"><br><br>
+                  <h4>Hora de apertura (formato 24 h)</h4>
+                  <input type="time" name="EZGLPI-B" id="EZGLPI-B" step="1"><br><br>
+                  <h4>Estado</h4>
+                  <select name="EZGLPI-3" id="EZGLPI-3">
+                     <option value="1">Nuevo</option>
+                     <option value="2">En curso</option>
+                     <option value="5">Resuelto</option>
+                     <option value="6" selected>Cerrado</option>
+                  </select>
+                  <br><br>
+                  <h4>Urgencia</h4>
+                  <select name="EZGLPI-5" id="EZGLPI-5">
+                     <option value="5">Muy Alta</option>
+                     <option value="4">Alta</option>
+                     <option value="3" selected>Media</option>
+                     <option value="2">Baja</option>
+                     <option value="1">Muy Baja</option>
+                  </select>
+                  <br><br>
+                  <h4>Impacto</h4>
+                  <select name="EZGLPI-6" id="EZGLPI-6">
+                     <option value="5">Muy Alta</option>
+                     <option value="4">Alta</option>
+                     <option value="3" selected>Media</option>
+                     <option value="2">Baja</option>
+                     <option value="1">Muy Baja</option>
+                  </select>
+                  <br><br>
+                  <h4>Prioridad</h4>
+                  <select name="EZGLPI-7" id="EZGLPI-7">
+                     <option value="5">Muy Alta</option>
+                     <option value="4">Alta</option>
+                     <option value="3" selected>Media</option>
+                     <option value="2">Baja</option>
+                     <option value="1">Muy Baja</option>
+                  </select>
+                  <br><br>
+                  <h4>Categoría</h4>
+                  <select name="EZGLPI-8" id="EZGLPI-8">
+                     <option value="4">Cliente</option>
+                     <option value="3">SAT</option>
+                     <option value="2" selected>SMIX</option>
+                  </select>
+                  <br><br>
+                  <h4>Duración total</h4>
+                  <select name="EZGLPI-9" id="EZGLPI-9">
+                     <option value="900">0h 15m</option>
+                     <option value="1800">0h 30m</option>
+                     <option value="2700">0h 45m</option>
+                     <option value="3600">1h 00m</option>
+                     <option value="4500">1h 15m</option>
+                     <option value="5400">1h 30m</option>
+                     <option value="6300">1h 45m</option>
+                     <option value="7200">2h 00m</option>
+                     <option value="8100">2h 15m</option>
+                     <option value="9000">2h 30m</option>
+                     <option value="9900">2h 45m</option>
+                     <option value="10800">3h 00m</option>
+                     <option value="11700">3h 15m</option>
+                     <option value="12600">3h 30m</option>
+                     <option value="13500">3h 45m</option>
+                     <option value="14400">4h 00m</option>
+                     <option value="15300">4h 15m</option>
+                     <option value="16200">4h 30m</option>
+                     <option value="17100">4h 45m</option>
+                     <option value="18000">5h 00m</option>
+                     <option value="18900">5h 15m</option>
+                     <option value="19800">5h 30m</option>
+                     <option value="20700">5h 45m</option>
+                     <option value="21600">6h 00m</option>
+                  </select>
+                  <br><br>
+                  <h4>Tecnico asignado</h4>
+                  <select name="EZGLPI-C" id="EZGLPI-C">
+                     <option value="null"></option>
+                     <option value="14">Adriá Montolio Ibáñez</option>
+                     <option value="8">Alexei Barberá Roca</option>
+                     <option value="17">Biel Palomar González</option>
+                     <option value="21">Carlos Rodríguez Padilla</option>
+                     <option value="7">Daniel Bañeza Gañán</option>
+                     <option value="11">Denis González Andrei</option>
+                     <option value="9">Guillermo Burgaleta Rey</option>
+                     <option value="18">Héctor Pedrola Vicente</option>
+                     <option value="15">Isaac Muñoz Bea</option>
+                     <option value="13">Isam Maaroufi Tijani</option>
+                     <option value="12">Iván Kubynets</option>
+                     <option value="22">Iván Román Román</option>
+                     <option value="24">Izan Villaécija Moreno</option>
+                     <option value="10">Javier Cano Cabedo</option>
+                     <option value="20">Marc Pons Cabrera</option>
+                     <option value="6">Pau Baltonrá Teruel</option>
+                     <option value="16">Raúl Ortega Morón</option>
+                     <option value="19">Victor Polyukhovych Kokhanets</option>
+                  </select>
+                  <button onclick="bum1()" class="boto" type="button"><img src="plus.jpg" alt="+" class="plu"></button>
+                  <div id="2tecnic">
+                     <select name="EZGLPI-D" id="EZGLPI-D">
                         <option value="null"></option>
                         <option value="14">Adriá Montolio Ibáñez</option>
                         <option value="8">Alexei Barberá Roca</option>
@@ -125,10 +151,11 @@
                         <option value="6">Pau Baltonrá Teruel</option>
                         <option value="16">Raúl Ortega Morón</option>
                         <option value="19">Victor Polyukhovych Kokhanets</option>
-                    </select>
-                    <button onclick="bum1()" class="boto" type="button"><img src="plus.jpg" alt="+" class="plu"></button>
-                    <div id="2tecnic">
-                    <select name="EZGLPI-D" id="EZGLPI-D">
+                     </select>
+                     <button onclick="bum2()" class="boto" type="button"><img src="equis.jpg" alt="x" class="plu"></button>
+                  </div>
+                  <div id="3tecnic">
+                     <select name="EZGLPI-E" id="EZGLPI-E">
                         <option value="null"></option>
                         <option value="14">Adriá Montolio Ibáñez</option>
                         <option value="8">Alexei Barberá Roca</option>
@@ -148,59 +175,12 @@
                         <option value="6">Pau Baltonrá Teruel</option>
                         <option value="16">Raúl Ortega Morón</option>
                         <option value="19">Victor Polyukhovych Kokhanets</option>
-                    </select>
-                    <button onclick="bum2()" class="boto" type="button"><img src="equis.jpg" alt="x" class="plu"></button>
-                    </div>
-                    <div id="3tecnic">
-                        <select name="EZGLPI-E" id="EZGLPI-E">
-                            <option value="null"></option>
-                            <option value="14">Adriá Montolio Ibáñez</option>
-                            <option value="8">Alexei Barberá Roca</option>
-                            <option value="17">Biel Palomar González</option>
-                            <option value="21">Carlos Rodríguez Padilla</option>
-                            <option value="7">Daniel Bañeza Gañán</option>
-                            <option value="11">Denis González Andrei</option>
-                            <option value="9">Guillermo Burgaleta Rey</option>
-                            <option value="18">Héctor Pedrola Vicente</option>
-                            <option value="15">Isaac Muñoz Bea</option>
-                            <option value="13">Isam Maaroufi Tijani</option>
-                            <option value="12">Iván Kubynets</option>
-                            <option value="22">Iván Román Román</option>
-                            <option value="24">Izan Villaécija Moreno</option>
-                            <option value="10">Javier Cano Cabedo</option>
-                            <option value="20">Marc Pons Cabrera</option>
-                            <option value="6">Pau Baltonrá Teruel</option>
-                            <option value="16">Raúl Ortega Morón</option>
-                            <option value="19">Victor Polyukhovych Kokhanets</option>
-                        </select>
-                        <button onclick="bum2()" class="boto" type="button"><img src="equis.jpg" alt="x" class="plu"></button>
-                        </div>
-                        <div id="4tecnic">
-                            <select name="EZGLPI-F" id="EZGLPI-F">
-                                <option value="null"></option>
-                                <option value="14">Adriá Montolio Ibáñez</option>
-                                <option value="8">Alexei Barberá Roca</option>
-                                <option value="17">Biel Palomar González</option>
-                                <option value="21">Carlos Rodríguez Padilla</option>
-                                <option value="7">Daniel Bañeza Gañán</option>
-                                <option value="11">Denis González Andrei</option>
-                                <option value="9">Guillermo Burgaleta Rey</option>
-                                <option value="18">Héctor Pedrola Vicente</option>
-                                <option value="15">Isaac Muñoz Bea</option>
-                                <option value="13">Isam Maaroufi Tijani</option>
-                                <option value="12">Iván Kubynets</option>
-                                <option value="22">Iván Román Román</option>
-                                <option value="24">Izan Villaécija Moreno</option>
-                                <option value="10">Javier Cano Cabedo</option>
-                                <option value="20">Marc Pons Cabrera</option>
-                                <option value="6">Pau Baltonrá Teruel</option>
-                                <option value="16">Raúl Ortega Morón</option>
-                                <option value="19">Victor Polyukhovych Kokhanets</option>
-                            </select>
-                            <button onclick="bum2()" class="boto" type="button"><img src="equis.jpg" alt="x" class="plu"></button>
-                            </div>
-                    <h4>Solicitante</h4>
-                    <select name="EZGLPI-G" id="EZGLPI-G">
+                     </select>
+                     <button onclick="bum2()" class="boto" type="button"><img src="equis.jpg" alt="x" class="plu"></button>
+                  </div>
+                  <div id="4tecnic">
+                     <select name="EZGLPI-F" id="EZGLPI-F">
+                        <option value="null"></option>
                         <option value="14">Adriá Montolio Ibáñez</option>
                         <option value="8">Alexei Barberá Roca</option>
                         <option value="17">Biel Palomar González</option>
@@ -219,17 +199,43 @@
                         <option value="6">Pau Baltonrá Teruel</option>
                         <option value="16">Raúl Ortega Morón</option>
                         <option value="19">Victor Polyukhovych Kokhanets</option>
-                    </select>
-                    <div class="armedioillo">
-                        <input type="submit" value="Guardar incidéncia">
-                    </div>
-                  </form>
-                  <br><br><br>
-                </div>
-                <div class="col-sm-1"></div>
+                     </select>
+                     <button onclick="bum2()" class="boto" type="button"><img src="equis.jpg" alt="x" class="plu"></button>
+                  </div>
+                  <br>
+                  <br>
+                  <h4>Solicitante</h4>
+                  <select name="EZGLPI-G" id="EZGLPI-G">
+                      <option value=""></option>
+                     <option value="14">Adriá Montolio Ibáñez</option>
+                     <option value="8">Alexei Barberá Roca</option>
+                     <option value="17">Biel Palomar González</option>
+                     <option value="21">Carlos Rodríguez Padilla</option>
+                     <option value="7">Daniel Bañeza Gañán</option>
+                     <option value="11">Denis González Andrei</option>
+                     <option value="9">Guillermo Burgaleta Rey</option>
+                     <option value="18">Héctor Pedrola Vicente</option>
+                     <option value="15">Isaac Muñoz Bea</option>
+                     <option value="13">Isam Maaroufi Tijani</option>
+                     <option value="12">Iván Kubynets</option>
+                     <option value="22">Iván Román Román</option>
+                     <option value="24">Izan Villaécija Moreno</option>
+                     <option value="10">Javier Cano Cabedo</option>
+                     <option value="20">Marc Pons Cabrera</option>
+                     <option value="6">Pau Baltonrá Teruel</option>
+                     <option value="16">Raúl Ortega Morón</option>
+                     <option value="19">Victor Polyukhovych Kokhanets</option>
+                  </select> 
+                  <div class="armedioillo">
+                     <input type="submit" value="Guardar incidéncia">
+                  </div>
+               </form>
+               <br><br><br>
             </div>
-        </div>
-        <br><br><br>
+            <div class="col-sm-1"></div>
+         </div>
+      </div>
+      <br><br><br>
    </body>
 </html>
 

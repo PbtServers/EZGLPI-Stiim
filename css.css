@@ -1,6 +1,5 @@
 .mat{
-    margin-top: 5%;
-    background-color: #e6e6e6;
+    background-color: #82c0e4;
 }
 .titulo{
     text-align: center;
@@ -8,6 +7,7 @@
 }
 body{
     font-size: 100%;
+    background-color: #a1cae6;
 }
 .tamany{
     width: auto;    
