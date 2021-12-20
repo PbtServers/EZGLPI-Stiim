@@ -71,7 +71,7 @@ chown root:www-data -R /ezglpi
 chmod 775 -R /ezglpi
 ```
 
-Por último, hay que crear una contraseña de API en el glpi, dentro del GLPI, hayq eu ir a "Configuración --> General --> API" y una vez auí clicamos la opción de full access from localhost.
+Por último, hay que crear una contraseña de API en el glpi, dentro del GLPI, hay que ir a "Configuración --> General --> API" y una vez auí clicamos la opción de full access from localhost.
 
 <img src="https://raw.githubusercontent.com/Bielpg04/IMG/main/localhs.png"></img>
 
