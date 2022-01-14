@@ -23,11 +23,10 @@
  $EZGLPI_CP = "cp /ezglpi/GLPI-AUTO.sh /ezglpi/temp/GLPI-AUTO-EZGLPI-C.sh";
  shell_exec(str_replace("EZGLPI-C", $EZGLPIC, $EZGLPI_CP));
 
- $EZGLPI_1 = "sed -i 's/EZGLPI-1/EZGLPI_1/g' /ezglpi/temp/GLPI-AUTO-EZGLPI-C.sh";
+ $EZGLPI_1 = 'sed -i "s/EZGLPI-1/EZGLPI_1/g" /ezglpi/temp/GLPI-AUTO-EZGLPI-C.sh';
  $EZGLPI_1A = str_replace("EZGLPI_1", $EZGLPI1, $EZGLPI_1);
- $EZGLPI_1AF = str_replace('"', "*", $EZGLPI_1A);
- $EZGLPI_1AG = str_replace("'", "*", $EZGLPI_1AF);
- shell_exec(str_replace("EZGLPI-C", $EZGLPIC, $EZGLPI_1AG));
+ $EZGLPI_1AF = str_replace("'", "*", $EZGLPI_1A);
+ shell_exec(str_replace("EZGLPI-C", $EZGLPIC, $EZGLPI_1AF));
 
  $EZGLPI_2 = "sed -i 's/EZGLPI-2/EZGLPI_2/g' /ezglpi/temp/GLPI-AUTO-EZGLPI-C.sh";
  $EZGLPI_2A = str_replace("EZGLPI_2", $EZGLPI2, $EZGLPI_2);
@@ -37,11 +36,10 @@
  $EZGLPI_3A = str_replace("EZGLPI_3", $EZGLPI3, $EZGLPI_3);
  shell_exec(str_replace("EZGLPI-C", $EZGLPIC, $EZGLPI_3A));
 
- $EZGLPI_4 = "sed -i 's/EZGLPI-4/EZGLPI_4/g' /ezglpi/temp/GLPI-AUTO-EZGLPI-C.sh";
+ $EZGLPI_4 = 'sed -i "s/EZGLPI-4/EZGLPI_4/g" /ezglpi/temp/GLPI-AUTO-EZGLPI-C.sh';
  $EZGLPI_4A = str_replace("EZGLPI_4", $EZGLPI4, $EZGLPI_4);
- $EZGLPI_4AF = str_replace('"', "*", $EZGLPI_4A);
- $EZGLPI_4AG = str_replace("'", "*", $EZGLPI_4AF);
- shell_exec(str_replace("EZGLPI-C", $EZGLPIC, $EZGLPI_4AG));
+ $EZGLPI_4AF = str_replace("'", "*", $EZGLPI_4A);
+ shell_exec(str_replace("EZGLPI-C", $EZGLPIC, $EZGLPI_4AF));
 
  $EZGLPI_5 = "sed -i 's/EZGLPI-5/EZGLPI_5/g' /ezglpi/temp/GLPI-AUTO-EZGLPI-C.sh";
  $EZGLPI_5A = str_replace("EZGLPI_5", $EZGLPI5, $EZGLPI_5);
