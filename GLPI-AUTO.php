@@ -25,7 +25,8 @@
 
  $EZGLPI_1 = 'sed -i "s/EZGLPI-1/EZGLPI_1/g" /ezglpi/temp/GLPI-AUTO-EZGLPI-C.sh';
  $EZGLPI_1A = str_replace("EZGLPI_1", $EZGLPI1, $EZGLPI_1);
- $EZGLPI_1AF = str_replace("'", "*", $EZGLPI_1A);
+ $EZGLPI_1AF = str_replace("'", " [te hemos Dicho que no Pongas estos Carácteres!] ", $EZGLPI_1A);
+ //$EZGLPI_1AG = str_replace("\"", " [te hemos Dicho que no Pongas estos Carácteres!] ", $EZGLPI_1AF);
  shell_exec(str_replace("EZGLPI-C", $EZGLPIC, $EZGLPI_1AF));
 
  $EZGLPI_2 = "sed -i 's/EZGLPI-2/EZGLPI_2/g' /ezglpi/temp/GLPI-AUTO-EZGLPI-C.sh";
@@ -38,7 +39,8 @@
 
  $EZGLPI_4 = 'sed -i "s/EZGLPI-4/EZGLPI_4/g" /ezglpi/temp/GLPI-AUTO-EZGLPI-C.sh';
  $EZGLPI_4A = str_replace("EZGLPI_4", $EZGLPI4, $EZGLPI_4);
- $EZGLPI_4AF = str_replace("'", "*", $EZGLPI_4A);
+ $EZGLPI_4AF = str_replace("'", " [te hemos Dicho que no Pongas estos Carácteres!] ", $EZGLPI_4A);
+ //$EZGLPI_4AG = str_replace("\"", " [te hemos Dicho que no Pongas estos Carácteres!] ", $EZGLPI_4AF);
  shell_exec(str_replace("EZGLPI-C", $EZGLPIC, $EZGLPI_4AF));
 
  $EZGLPI_5 = "sed -i 's/EZGLPI-5/EZGLPI_5/g' /ezglpi/temp/GLPI-AUTO-EZGLPI-C.sh";
